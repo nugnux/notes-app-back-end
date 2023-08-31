@@ -1,8 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
 require('dotenv').config();
 
 const Hapi = require('@hapi/hapi');
 const notes = require('./api/notes');
-//const NotesService = require('./services/inMemory/NotesService');
+// const NotesService = require('./services/inMemory/NotesService');
 const NotesService = require('./services/postgres/NotesService');
 const NotesValidator = require('./validator/notes');
 

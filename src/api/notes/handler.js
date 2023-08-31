@@ -97,7 +97,7 @@ class NotesHandler {
       const { title, body, tags } = request.payload;
       const { id } = request.params;
 
-      await this._service.editNoteById(id,{ title, body, tags });
+      await this._service.editNoteById(id, { title, body, tags });
 
       return {
         status: 'success',
